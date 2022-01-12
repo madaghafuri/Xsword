@@ -1,0 +1,650 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 9598,
+      "max": [
+        2.302830696105957,
+        3.5369665622711182,
+        0.20205014944076538
+      ],
+      "min": [
+        -2.302830696105957,
+        -7.5065913200378418,
+        -0.20205014944076538
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 115176,
+      "componentType": 5126,
+      "count": 9598,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 9598,
+      "max": [
+        1,
+        0.9975123405456543,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 9598,
+      "max": [
+        0.97052085399627686,
+        0.85620862245559692
+      ],
+      "min": [
+        0.00093225558521226048,
+        0.045128721743822098
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 15282,
+      "max": [
+        9597
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 230352,
+      "componentType": 5126,
+      "count": 17522,
+      "max": [
+        1.6143900156021118,
+        3.5369665622711182,
+        0.25257512927055359
+      ],
+      "min": [
+        -1.6143900156021118,
+        -17.049522399902344,
+        -0.25257512927055359
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 440616,
+      "componentType": 5126,
+      "count": 17522,
+      "max": [
+        0.9997674822807312,
+        0.9999549388885498,
+        1
+      ],
+      "min": [
+        -0.9997674822807312,
+        -0.99352043867111206,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 153568,
+      "componentType": 5126,
+      "count": 17522,
+      "max": [
+        0.99804508686065674,
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -0.99804508686065674,
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 76784,
+      "componentType": 5126,
+      "count": 17522,
+      "max": [
+        0.99442124366760254,
+        0.86135596036911011
+      ],
+      "min": [
+        0.00093225558521226048,
+        0.00093225558521226048
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 61128,
+      "componentType": 5125,
+      "count": 25644,
+      "max": [
+        17521
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 650880,
+      "componentType": 5126,
+      "count": 7649,
+      "max": [
+        2.2414827346801758,
+        2.7916350364685059,
+        0.26635941863059998
+      ],
+      "min": [
+        -2.2414827346801758,
+        -17.049522399902344,
+        -0.26635941863059998
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 742668,
+      "componentType": 5126,
+      "count": 7649,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 433920,
+      "componentType": 5126,
+      "count": 7649,
+      "max": [
+        1,
+        1,
+        0.99995315074920654,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 216960,
+      "componentType": 5126,
+      "count": 7649,
+      "max": [
+        0.99906772375106812,
+        0.860512375831604
+      ],
+      "min": [
+        0.011024223640561104,
+        0.00093225558521226048
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 163704,
+      "componentType": 5125,
+      "count": 11847,
+      "max": [
+        7648
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 834456,
+      "componentType": 5126,
+      "count": 756,
+      "max": [
+        0.37088894844055176,
+        -1.2171839475631714,
+        0.20303280651569366
+      ],
+      "min": [
+        -0.37088894844055176,
+        -3.0182375907897949,
+        -0.20303280651569366
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 843528,
+      "componentType": 5126,
+      "count": 756,
+      "max": [
+        0.52085375785827637,
+        0.42382502555847168,
+        0.99985873699188232
+      ],
+      "min": [
+        -0.52085375785827637,
+        -0.61795675754547119,
+        -0.99985873699188232
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 556304,
+      "componentType": 5126,
+      "count": 756,
+      "max": [
+        -0.8210185170173645,
+        -0.13411372900009155,
+        0.55133622884750366,
+        1
+      ],
+      "min": [
+        -0.98409479856491089,
+        -0.18530125916004181,
+        -0.54091775417327881,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 278152,
+      "componentType": 5126,
+      "count": 756,
+      "max": [
+        0.49075958132743835,
+        0.56571269035339355
+      ],
+      "min": [
+        0.35636201500892639,
+        0.44015765190124512
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 211092,
+      "componentType": 5125,
+      "count": 1128,
+      "max": [
+        755
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Wawann (https://sketchfab.com/Wawann)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/crystal-sword-sword-0b98e49ee5854fbdb5a5402b73796d5b",
+      "title": "Crystal Sword - Sword"
+    },
+    "generator": "Sketchfab-4.64.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 215604,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 284200,
+      "byteOffset": 215604,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 852600,
+      "byteOffset": 499804,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 568400,
+      "byteOffset": 1352404,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1920804,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.062829599999999999,
+            0.064852900000000005,
+            0.10548299999999999,
+            1
+          ],
+          "glossinessFactor": 0,
+          "specularFactor": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "name": "Material_2"
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.28539900000000001,
+            0.372251,
+            1,
+            1
+          ],
+          "glossinessFactor": 0.089243651500000007,
+          "specularFactor": [
+            0.28045455470000002,
+            0.28045455470000002,
+            0.28045455470000002
+          ]
+        }
+      },
+      "name": "Lame"
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.047016099999999998,
+            0.047016099999999998,
+            0.047016099999999998,
+            1
+          ],
+          "glossinessFactor": 0,
+          "specularFactor": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "name": "Material"
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        1,
+        1,
+        1
+      ],
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.80000000000000004,
+            0.788713,
+            0.57625899999999997,
+            1
+          ],
+          "glossinessFactor": 0.17346821409999999,
+          "specularFactor": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "name": "Glow"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Sword_Material 2_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Sword_Lame_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Sword_Material_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 11,
+            "POSITION": 10,
+            "TANGENT": 12,
+            "TEXCOORD_0": 13
+          },
+          "indices": 14,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Sword_Glow_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 16,
+            "POSITION": 15,
+            "TANGENT": 17,
+            "TEXCOORD_0": 18
+          },
+          "indices": 19,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "2702af219ec048b6a8871160e262146d.fbx"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "matrix": [
+        7.5497899487686482e-06,
+        -99.99999999999973,
+        0,
+        0,
+        7.5497899543197633e-06,
+        5.5511151231257827e-13,
+        -99.99999999999973,
+        0,
+        99.999999999999446,
+        7.5497899543197633e-06,
+        7.5497899487686482e-06,
+        0,
+        0,
+        0,
+        -741.9334716796875,
+        1
+      ],
+      "name": "Sword"
+    },
+    {
+      "mesh": 0,
+      "name": "Sword_Material 2_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Sword_Lame_0"
+    },
+    {
+      "mesh": 2,
+      "name": "Sword_Material_0"
+    },
+    {
+      "mesh": 3,
+      "name": "Sword_Glow_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
+
