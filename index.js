@@ -3,7 +3,7 @@ import {OrbitControls} from './node_modules/three/examples/jsm/controls/OrbitCon
 import {Ground, Head, Body, RightArm, LeftArm, RightLeg, LeftLeg, AmbientLight, DirectionalLight, Shield} from './components.js';
 import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 
-let scene, tpsCamera, renderer, freeCamera, activeCamera;
+let scene, tpsCamera, renderer, freeCamera, activeCamera, passiveCamera, tempCamera;
 let control;
 let ambientLight, directionalLight;
 let ground;
@@ -22,6 +22,9 @@ function initialize(){
   freeCamera.position.set(0, 5, 200)
   freeCamera.lookAt(0, 5, 0);
 
+  activeCamera = tpsCamera;
+  passiveCamera = freeCamera;
+
   renderer = new THREE.WebGLRenderer({
     antialias: true,
     color: 0x303030
@@ -31,7 +34,7 @@ function initialize(){
   renderer.shadowMapEnabled = true;
   
 
-  control = new OrbitControls(tpsCamera, renderer.domElement);
+  control = new OrbitControls(activeCamera, renderer.domElement);
 
   ambientLight = AmbientLight();
   directionalLight = DirectionalLight();
@@ -56,8 +59,7 @@ function initialize(){
   leftarm = LeftArm();
   rightleg = RightLeg();
   leftleg = LeftLeg();
-  character = new THREE.BufferGeometry();
-  character.merge
+  
 
   let fontloader = new THREE.FontLoader();
   fontloader.load('./node_modules/three/examples/fonts/helvetiker_regular.typeface.json', font => {
@@ -74,15 +76,15 @@ function initialize(){
     mesh.rotation.set(0, -Math.PI/8, 0);
     scene.add(mesh)
   })
-  const loader = new GLTFLoader();
+  loader = new GLTFLoader();
   loader.load(
     './assets/3dmodel/model.gltf',
-    gltf => {
-      gltf.scene.position.set(0, 8, -30)
-      gltf.scene.rotation.set(Math.PI/2, 0, Math.PI/2);
-      gltf.scene.scale.set(0.01, 0.005, 0.005)
-      console.log(gltf.scene.position)
-      scene.add(gltf.scene)
+    sword => {
+      sword.scene.position.set(0, 8, -30)
+      sword.scene.rotation.set(Math.PI/2, 0, Math.PI/2);
+      sword.scene.scale.set(0.01, 0.005, 0.005)
+      scene.add(sword.scene);
+      console.log(sword.scene);
     },
     xhr => {
       console.log((xhr.loaded / xhr.total * 100) + '% loaded');
@@ -92,6 +94,8 @@ function initialize(){
     }
   )
   shield = Shield();
+  shield.visible = true;
+  console.log(loader);
 
   scene.background = new THREE.CubeTextureLoader()
   .setPath('./assets/skybox/')
@@ -112,13 +116,17 @@ function onKeyDown(event){
   console.log(event.key)
   switch(event.key){
     case 'w':
-      head.position.z -= 0.5;
-      body.position.z -= 0.5;
-      rightarm.position.z -= 0.5;
-      leftarm.position.z -= 0.5;
-      rightleg.position.z -= 0.5;
-      leftleg.position.z -= 0.5;
-      break
+      if(head.position.z == -20){
+        break;
+      }else {
+        head.position.z -= 0.5;
+        body.position.z -= 0.5;
+        rightarm.position.z -= 0.5;
+        leftarm.position.z -= 0.5;
+        rightleg.position.z -= 0.5;
+        leftleg.position.z -= 0.5;
+        break;
+      }
     case 'a':
       head.position.x -= 0.5;
       body.position.x -= 0.5;
@@ -143,6 +151,15 @@ function onKeyDown(event){
       rightleg.position.x += 0.5;
       leftleg.position.x += 0.5;
       break;
+    case ' ':
+      if(activeCamera == tpsCamera){
+        // passiveCamera = activeCamera;
+        activeCamera = freeCamera;
+      }else if(activeCamera == freeCamera){
+        // passiveCamera = activeCamera;
+        activeCamera = tpsCamera;
+      }
+      break;
   }
 }
 
@@ -155,9 +172,10 @@ function addComponent(){
   scene.add(leftleg);
   scene.add(ambientLight);
   scene.add(directionalLight);
-  scene.add(loader);
   scene.add(shield)
 }
+
+
 
 window.onload = () => {
   initialize()
@@ -166,11 +184,22 @@ window.onload = () => {
 }
 
 function rendering(){
-  renderer.render(scene, tpsCamera)
+  renderer.render(scene, activeCamera)
   requestAnimationFrame(rendering)
   control.update();
+  
 }
 
 window.onresize = () => {
   renderer.setSize(window.innerWidth, window.innerHeight)
+}
+
+window.addEventListener("click", shieldVanish, false);
+
+function shieldVanish(){
+  if(head.position.z == -20 && shield.visible == true){
+    shield.visible = false;
+  }else if(head.position.z == -20 && shield.visible == false){
+    shield.visible = true;
+  }
 }
